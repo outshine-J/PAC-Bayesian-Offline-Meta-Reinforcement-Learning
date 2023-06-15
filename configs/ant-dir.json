@@ -1,0 +1,21 @@
+{
+    "env_name": "ant-dir",
+    "n_train_tasks": 2,
+    "n_eval_tasks": 2,
+    "n_tasks": 2,
+    "data_dir": "./data/ant_dir_norm",
+    "num_evals": 4,
+    "snap_init_steps": 600,
+    "snap_iter_nums": 20,
+     "n_trj": 50,
+    "train_epoch": 8e5,
+    "eval_epoch": 8e5,
+    "enable_train_eval": true,
+    "enable_adaptation": true,
+    "forward_backward": 1,
+    "randomize_tasks": true,
+    "max_path_length": 200,
+    "sample": 1,
+    "decay_step": 50000,
+    "meta_schedule": {"decay_factor": 0.5, "decay_epochs": [25000, 50000, 75000, 100000]}
+}

@@ -1,0 +1,21 @@
+{
+    "env_name": "point-robot-wind",
+    "n_train_tasks": 10,
+    "n_eval_tasks": 5,
+    "n_tasks": 15,
+    "data_dir": "./data/point_robot_wind_norm",
+    "num_evals": 10,
+    "snap_init_steps": 600,
+    "snap_iter_nums": 20,
+    "n_trj": 50,
+    "train_epoch": 8e5,
+    "eval_epoch": 8e5,
+    "enable_train_eval": true,
+    "enable_adaptation": true,
+    "randomize_tasks": true,
+    "max_path_length": 20,
+    "goal_radius": 0.2,
+    "sample": 1,
+    "decay_step": 20000,
+    "meta_schedule": {"decay_factor": 0.5, "decay_epochs": [10000, 20000, 40000]}
+}
